@@ -43,10 +43,10 @@ public class Queue<T> extends Adt<T>{
 	public T rmv(){
 		if(isEmpty())
 			return null;
-		T tmp = array[0];
+		T aux = array[0];
 		shiftLeft();		
 		--tail;
-		return tmp;
+		return aux;
 		}
 	
 	

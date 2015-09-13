@@ -31,9 +31,9 @@ public class Stack<T> extends Adt<T> {
 	public T rmv(){
 		if(isEmpty())
 			return null;
-		T tmp = array[tail];
+		T aux = array[tail];
 		--tail;
-		return tmp;
+		return aux;
 		}
 	
 	
