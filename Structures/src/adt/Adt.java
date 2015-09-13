@@ -1,13 +1,27 @@
 package adt;
-
+/**
+ * Class of Adt<T> type
+ * @author Lucas
+ * @version 1.0
+ *
+ * */
 public abstract class Adt<T> {
 
 	protected T[] array;
-	protected int tail;
+	protected int tail, head;
+	
+	/**
+	 * 	Constructor of supertype Adt  
+	 *  
+	 *  @param size  
+	 *  		The size of the Queue
+	 *  
+	 *  */	
 	
 	public Adt(int size) {
 		array = (T[])new Object[size];
 		tail = -1;
+		head = -1;
 	}
 	/**
 	 * 	Add an element to Structure

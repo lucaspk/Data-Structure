@@ -11,7 +11,9 @@ import adt.Adt;
 public class Queue<T> extends Adt<T>{
 	
 	/**
-	 * 	Create a Queue with an specific size
+	 * 	Create a Queue with an specific size 
+	 * 	
+	 * 	Use T[] array and int tail from the supertype Adt<T>
 	 * 
 	 *  @param size  
 	 *  		The size of the Queue
