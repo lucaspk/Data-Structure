@@ -17,7 +17,8 @@ public class Queue<T> extends Adt<T>{
 	 * Use T[] array and int tail from the supertype Adt<T>
 	 * 
 	 * @param size  
-	 * 		The size of the Queue. If the size is not greater than zero, then will be issued an InvalidSizeException.
+	 * 		The size of the Queue. If the size is not greater than zero,
+	 * then will be issued an InvalidSizeException.
 	 *  
 	 * @throws Exception , InvalidSizeException 
 	 *  
@@ -39,10 +40,12 @@ public class Queue<T> extends Adt<T>{
 	}
 	
 	/**
-	 * Return and remove the peek of the Queue. However, if the Queue is empty, an UnderflowException will be issued.
+	 * Return and remove the peek of the Queue. However, if the Queue is empty,
+	 * an UnderflowException will be issued.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Queue, or UnderflowException if the Queue is empty.
+	 * 		Return the peek of the Queue, or UnderflowException if the Queue 
+	 * is empty.
 	 * 
 	 * @throws UnderflowException 
 	 *  
@@ -57,10 +60,12 @@ public class Queue<T> extends Adt<T>{
 		}
 	
 	/**
-	 * Return, without remove, the peek of the Queue. If the Queue is empty, then will be issued an UnderflowException.
+	 * Return, without remove, the peek of the Queue. If the Queue is empty, 
+	 * then will be issued an UnderflowException.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Queue, or UnderflowException if the Queue is empty.
+	 * 		Return the peek of the Queue, or UnderflowException if the Queue
+	 * is empty.
 	 * 
 	 * @throws UnderflowException 
 	 *  

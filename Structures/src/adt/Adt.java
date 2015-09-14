@@ -20,7 +20,8 @@ public abstract class Adt<T>  {
 	 * Constructor of supertype Adt  
 	 *  
 	 * @param size  
-	 * 		The size of the Structure. If the size is not greater than zero, then will be issued an InvalidSizeException.
+	 * 		The size of the Structure. If the size is not greater than zero, 
+	 * then will be issued an InvalidSizeException.
 	 *  
 	 * @throws Exception , InvalidSizeException
 	 *  
@@ -35,9 +36,9 @@ public abstract class Adt<T>  {
 		head = -1;
 	}
 	/**
-	 * Add an element to structure. If the structure is already full,
-	 * then will be issued an OverflowException. On the other hand, if
-	 * the element is null, then will be issued a NullElement Exception
+	 * Add an element to structure. If the structure is already full,then
+	 * will be issued an OverflowException. On the other hand, if the element 
+	 * is null, then will be issued a NullElementException.
 	 * 
 	 * @param element
 	 * 		An element to add in the Structure 
@@ -55,10 +56,12 @@ public abstract class Adt<T>  {
 		array[++tail] = element;}
 	
 	/**
-	 * Return and remove the peek of the Structure. However, if the Structure is empty, an UnderflowException will be issued.
+	 * Return and remove the peek of the Structure. However,if the
+	 * Structure is empty, an UnderflowException will be issued.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Structure, or UnderflowException if the Structure is empty.
+	 * 		Return the peek of the Structure, or UnderflowException 
+	 * if the Structure is empty.
 	 * 
 	 * @throws UnderflowException 
 	 *  
@@ -66,10 +69,12 @@ public abstract class Adt<T>  {
 	public abstract T rmv() throws UnderflowException;
 	
 	/**
-	 * Return, without remove, the peek of the Structure. If the Structure is empty, then will be issued an UnderflowException.
+	 * Return, without remove, the peek of the Structure. If the Structure 
+	 * is empty, then will be issued an UnderflowException.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Structure, or UnderflowException if the Structure is empty.
+	 * 		Return the peek of the Structure, or UnderflowException if the 
+	 * Structure is empty.
 	 * 
 	 * @throws UnderflowException 
 	 *  
