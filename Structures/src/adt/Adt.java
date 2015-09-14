@@ -12,9 +12,10 @@ import exceptions.*;
 public abstract class Adt<T>  {
 
 	protected T[] array;
-	protected int tail, head, size;
+	protected int tail, head;
+	
 	/**
-	 * Constructor of supertype Adt  
+	 * Constructor of supertype Adt<T>  
 	 *  
 	 * @param size  
 	 * 		The size of the Structure. If the size is not greater than zero, 
@@ -23,15 +24,14 @@ public abstract class Adt<T>  {
 	 * @throws Exception , InvalidSizeException
 	 *  
 	 *   
-	 *  */	
-	
+	 *  */		
 	public Adt(int size) throws Exception {
 		if(size <= 0)
 			throw new InvalidSizeException();
 		array = (T[])new Object[size];
 		tail = -1;
 		head = -1;
-		this.size = size;
+		
 	}
 	/**
 	 * Add an element to structure without violating capacity restrictions.
@@ -118,6 +118,7 @@ public abstract class Adt<T>  {
 	 * 
 	 * @return 
 	 * 		String representation of the Stack.
+	 * 
 	 *  */
 	public abstract String toString();
 	
