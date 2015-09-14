@@ -107,6 +107,8 @@ public abstract class Adt<T>  {
 	 * 
 	 *  */
 	public void clear(){
-		array = (T[])new Object[size];
+		for (int i = 0; i < array.length; i++) {
+			--tail;
+		}
 	}
 }
