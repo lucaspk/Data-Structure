@@ -113,6 +113,12 @@ public abstract class Adt<T>  {
 		}
 	}
 	
+	/**
+	 * An Abstract method to show the string representation of the Structure.
+	 * 
+	 * @return 
+	 * 		String representation of the Stack.
+	 *  */
 	public abstract String toString();
 	
 	
