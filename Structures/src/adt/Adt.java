@@ -1,9 +1,5 @@
 package adt;
-
-import exceptions.InvalidSizeException;
-import exceptions.NullElementException;
-import exceptions.OverflowException;
-import exceptions.UnderflowException;
+import exceptions.*;
 
 /**
  * Class of Adt<T> type
@@ -16,8 +12,7 @@ import exceptions.UnderflowException;
 public abstract class Adt<T>  {
 
 	protected T[] array;
-	protected int tail, head;
-	
+	protected int tail, head, size;
 	/**
 	 * Constructor of supertype Adt  
 	 *  
@@ -36,6 +31,7 @@ public abstract class Adt<T>  {
 		array = (T[])new Object[size];
 		tail = -1;
 		head = -1;
+		this.size = size;
 	}
 	/**
 	 * Add an element to structure. If the structure is already full,then
@@ -102,5 +98,15 @@ public abstract class Adt<T>  {
 	 *  */	
 	public boolean isFull(){
 		return tail == array.length-1;
+	}
+	
+	/**
+	 * Remove all the elements of the Structure.
+	 * 
+	 * @return void
+	 * 
+	 *  */
+	public void clear(){
+		array = (T[])new Object[size];
 	}
 }
