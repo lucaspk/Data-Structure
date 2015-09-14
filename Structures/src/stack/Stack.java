@@ -12,15 +12,14 @@ import adt.Adt;
 public class Stack<T> extends Adt<T> {
 	
 	/**
-	 * 	Create a Stack with an specific size
+	 * Create a Stack with an specific size
 	 * 
-	 * 	Use T[] array and int tail from the supertype Adt<T>
+	 * Use T[] array and int tail from the supertype Adt<T>
 	 * 
-	 *  @param size  
-	 *  		The size of the Stack. If the size is not greater than zero,
-	 *  		then will be issued an InvalidSizeException.
+	 * @param size  
+	 * 		The size of the Stack. If the size is not greater than zero, then will be issued an InvalidSizeException.
 	 *  
-	 *  @throws Exception , InvalidSizeException 
+	 * @throws Exception , InvalidSizeException 
 	 *  
 	 *  */	
 	public Stack(int size) throws Exception {
@@ -28,14 +27,13 @@ public class Stack<T> extends Adt<T> {
 	}
 	
 	/**
-	 * 	Return and remove the peek of the Stack. However, if
-	 * 	the Stack is empty, an UnderflowException will be issued.
+	 * Return and remove the peek of the Stack. However, if
+	 * the Stack is empty, an UnderflowException will be issued.
 	 *  
-	 *  @return	peek
-	 *  		Return the peek of the Stack, or UnderflowException 
-	 *  		if the Stack is empty.
+	 * @return	peek
+	 * 		Return the peek of the Stack, or UnderflowException if the Stack is empty.
 	 * 
-	 * 	@throws UnderflowException 
+	 * @throws UnderflowException 
 	 *  
 	 *  */		
 	public T rmv() throws UnderflowException{
@@ -47,14 +45,12 @@ public class Stack<T> extends Adt<T> {
 		}
 	
 	/**
-	 * 	Return, without remove, the peek of the Stack. If the Stack 
-	 * 	is empty, then will be issued an UnderflowException.
+	 * Return, without remove, the peek of the Stack. If the Stack is empty, then will be issued an UnderflowException.
 	 *  
-	 *  @return	peek
-	 *  		Return the peek of the Stack, or UnderflowException if the 
-	 *  		Stack is empty.
+	 * @return peek
+	 * 		Return the peek of the Stack, or UnderflowException if the Stack is empty.
 	 * 
-	 * 	@throws UnderflowException 
+	 * @throws UnderflowException 
 	 *  
 	 *  */	
 	public T peek() throws UnderflowException{

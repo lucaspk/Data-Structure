@@ -12,15 +12,14 @@ import exceptions.*;
 public class Queue<T> extends Adt<T>{
 	
 	/**
-	 * 	Create a Queue with an specific size 
+	 * Create a Queue with an specific size 
 	 * 	
-	 * 	Use T[] array and int tail from the supertype Adt<T>
+	 * Use T[] array and int tail from the supertype Adt<T>
 	 * 
-	 *  @param size  
-	 *  		The size of the Queue. If the size is not greater than zero,
-	 *  		then will be issued an InvalidSizeException.
+	 * @param size  
+	 * 		The size of the Queue. If the size is not greater than zero, then will be issued an InvalidSizeException.
 	 *  
-	 *  @throws Exception , InvalidSizeException 
+	 * @throws Exception , InvalidSizeException 
 	 *  
 	 *  */	
 	public Queue(int size) throws Exception {
@@ -40,14 +39,12 @@ public class Queue<T> extends Adt<T>{
 	}
 	
 	/**
-	 * 	Return and remove the peek of the Queue. However, if
-	 * 	the Queue is empty, an UnderflowException will be issued.
+	 * Return and remove the peek of the Queue. However, if the Queue is empty, an UnderflowException will be issued.
 	 *  
-	 *  @return	peek
-	 *  		Return the peek of the Queue, or UnderflowException 
-	 *  		if the Queue is empty.
+	 * @return peek
+	 * 		Return the peek of the Queue, or UnderflowException if the Queue is empty.
 	 * 
-	 * 	@throws UnderflowException 
+	 * @throws UnderflowException 
 	 *  
 	 *  */	
 	public T rmv() throws UnderflowException{
@@ -60,14 +57,12 @@ public class Queue<T> extends Adt<T>{
 		}
 	
 	/**
-	 * 	Return, without remove, the peek of the Queue. If the Queue 
-	 * 	is empty, then will be issued an UnderflowException.
+	 * Return, without remove, the peek of the Queue. If the Queue is empty, then will be issued an UnderflowException.
 	 *  
-	 *  @return	peek
-	 *  		Return the peek of the Queue, or UnderflowException 
-	 *  		if the Queue is empty.
+	 * @return peek
+	 * 		Return the peek of the Queue, or UnderflowException if the Queue is empty.
 	 * 
-	 * 	@throws UnderflowException 
+	 * @throws UnderflowException 
 	 *  
 	 *  */	
 	public T peek() throws UnderflowException{
