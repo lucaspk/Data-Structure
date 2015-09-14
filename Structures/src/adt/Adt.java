@@ -87,7 +87,7 @@ public abstract class Adt<T>  {
 	 * Test if the Structure is empty or not.
 	 *  
 	 * @return boolean
-	 * 		Return true if the Structure is empty and false otherwise.
+	 * 		Return true if the Structure is empty, or false otherwise.
 	 *  
 	 *  */	
 	public boolean isEmpty(){
@@ -97,7 +97,7 @@ public abstract class Adt<T>  {
 	 * Test if the Structure is full or not.
 	 *  
 	 * @return boolean
-	 * 		Return true if the Structure is full and false otherwise.
+	 * 		Return true if the Structure is full, or false otherwise.
 	 *  
 	 *  */	
 	public boolean isFull(){
