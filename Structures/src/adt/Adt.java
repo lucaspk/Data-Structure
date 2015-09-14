@@ -79,7 +79,7 @@ public abstract class Adt<T>  {
 	/**
 	 * Test if the Structure is empty or not.
 	 *  
-	 * @return	boolean
+	 * @return boolean
 	 * 		Return true if the Structure is empty and false otherwise.
 	 *  
 	 *  */	

@@ -29,7 +29,7 @@ public class Queue<T> extends Adt<T>{
 	/**
 	 * Auxiliar method to do a swap in the reference of the head in Queue.
 	 * 
-	 * @return	void
+	 * @return void
 	 * 
 	 *  */
 	private void shiftLeft(){

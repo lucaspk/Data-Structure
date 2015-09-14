@@ -30,7 +30,7 @@ public class Stack<T> extends Adt<T> {
 	 * Return and remove the peek of the Stack. However, if
 	 * the Stack is empty, an UnderflowException will be issued.
 	 *  
-	 * @return	peek
+	 * @return peek
 	 * 		Return the peek of the Stack, or UnderflowException if the Stack is empty.
 	 * 
 	 * @throws UnderflowException 
