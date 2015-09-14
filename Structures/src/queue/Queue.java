@@ -5,7 +5,9 @@ import exceptions.*;
 
 /**
  * Class of Queue<T> type
- * @author Lucas
+ * 
+ * @author Jobson Lucas
+ * 
  * @version 1.0
  *
  * */

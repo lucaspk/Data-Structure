@@ -5,7 +5,9 @@ import adt.Adt;
 
 /**
  * Class of Stack<T> type
- * @author Lucas
+ * 
+ * @author Jobson Lucas
+ * 
  * @version 1.0
  *
  * */

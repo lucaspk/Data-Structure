@@ -7,7 +7,9 @@ import exceptions.UnderflowException;
 
 /**
  * Class of Adt<T> type
- * @author Lucas
+ * 
+ * @author Jobson Lucas
+ * 
  * @version 1.0
  *
  * */
