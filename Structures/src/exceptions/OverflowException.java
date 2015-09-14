@@ -6,6 +6,10 @@ public class OverflowException extends Exception {
 		super(message);
 	}
 
+	public OverflowException() {
+		super("The structure is full.");
+	}
+	
 	public OverflowException(String message, Throwable cause) {
 		super(message, cause);
 	}

@@ -4,6 +4,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+// testes precisam ser ajustados para as modificacoes
+
 /**
  * Cases of tests:
  * 
@@ -53,9 +55,9 @@ import org.junit.Test;
  * 
  * 		9.2) Test isFull == True
  * 
- * 		9.3) Test peek == elemento + antigo add
+ * 		9.3) Test peek == the oldest element added
  * 
- * 10) Remove all os elements
+ * 10) Remove all the elements
  * 
  * 11) Initial methods
  * 
@@ -77,14 +79,14 @@ public class TestStack {
 	private Stack<Object> f1,f2, f3;
 	
 	@Before
-	public void criaObjetos(){
+	public void criaObjetos() throws Exception{
 		f1 = new Stack(5);
 		f2 = new Stack(8);
 		f3 = new Stack(2);
 	}
 	
 	@Test
-	public void testaTd(){
+	public void testaTd() throws Exception{
 		
 		/**
 		 * Testa f3

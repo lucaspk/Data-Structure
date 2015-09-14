@@ -1,6 +1,7 @@
 package queue;
 
 import adt.Adt;
+import exceptions.*;
 
 /**
  * Class of Queue<T> type
@@ -16,10 +17,13 @@ public class Queue<T> extends Adt<T>{
 	 * 	Use T[] array and int tail from the supertype Adt<T>
 	 * 
 	 *  @param size  
-	 *  		The size of the Queue
+	 *  		The size of the Queue. If the size is not greater than zero,
+	 *  		then will be issued an InvalidSizeException.
+	 *  
+	 *  @throws Exception , InvalidSizeException 
 	 *  
 	 *  */	
-	public Queue(int size) {
+	public Queue(int size) throws Exception {
 		super(size);
 	}
 		
@@ -36,32 +40,39 @@ public class Queue<T> extends Adt<T>{
 	}
 	
 	/**
-	 * 	Return and remove the peek of the Queue; null if the Queue is empty.
+	 * 	Return and remove the peek of the Queue. However, if
+	 * 	the Queue is empty, an UnderflowException will be issued.
 	 *  
 	 *  @return	peek
-	 *  		Return the peek of the Queue, or null if the Queue is empty.
+	 *  		Return the peek of the Queue, or UnderflowException 
+	 *  		if the Queue is empty.
+	 * 
+	 * 	@throws UnderflowException 
 	 *  
-	 *  */		
-	public T rmv(){
+	 *  */	
+	public T rmv() throws UnderflowException{
 		if(isEmpty())
-			return null;
+			throw new UnderflowException();
 		T aux = array[0];
 		shiftLeft();		
 		--tail;
 		return aux;
 		}
 	
-	
 	/**
-	 * 	Return, without remove, the peek of the Queue; null if the Queue is empty.
+	 * 	Return, without remove, the peek of the Queue. If the Queue 
+	 * 	is empty, then will be issued an UnderflowException.
 	 *  
 	 *  @return	peek
-	 *  		Return the peek of the Queue, or null if the Queue is empty.
+	 *  		Return the peek of the Queue, or UnderflowException 
+	 *  		if the Queue is empty.
+	 * 
+	 * 	@throws UnderflowException 
 	 *  
 	 *  */	
-	public T peek(){
-		if (!isEmpty())
-			return array[0];
-		return null;}
+	public T peek() throws UnderflowException{
+		if (isEmpty())
+			throw new UnderflowException();
+		return array[0];}
 	
 }

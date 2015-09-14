@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+//testes precisam ser ajustados para as modificacoes
 /**
  * Cases of tests:
  * 
@@ -53,9 +54,9 @@ import org.junit.Test;
  * 
  * 		9.2) Test isFull == True
  * 
- * 		9.3) Test peek == elemento + antigo add
+ * 		9.3) Test peek == the oldest element added
  * 
- * 10) Remove all os elements
+ * 10) Remove all the elements
  * 
  * 11) Initial methods
  * 
@@ -77,14 +78,14 @@ public class TestQueue {
 	private Queue<Object> f1,f2, f3;
 	
 	@Before
-	public void createObjets(){
+	public void createObjets() throws Exception{
 		f1 = new Queue(5);
 		f2 = new Queue(8);
 		f3 = new Queue(2);
 	}
 	
 	@Test
-	public void testTd(){
+	public void testTd() throws Exception{
 		
 		/**
 		 * test f3

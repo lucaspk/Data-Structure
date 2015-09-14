@@ -6,6 +6,10 @@ public class UnderflowException extends Exception{
 		super(message);
 	}
 
+	public UnderflowException() {
+		super("The structure is empty.");
+	}
+	
 	public UnderflowException(String message, Throwable cause) {
 		super(message, cause);
 	}
