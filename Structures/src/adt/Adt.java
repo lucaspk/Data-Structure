@@ -34,9 +34,10 @@ public abstract class Adt<T>  {
 		this.size = size;
 	}
 	/**
-	 * Add an element to structure. If the structure is already full,then
-	 * will be issued an OverflowException. On the other hand, if the element 
-	 * is null, then will be issued a NullElementException.
+	 * Add an element to structure without violating capacity restrictions.
+	 * If the structure is already full,then will be issued an OverflowException.
+	 * On the other hand, if the element is null, then will be issued a 
+	 * NullElementException.
 	 * 
 	 * @param element
 	 * 		An element to add in the Structure 
@@ -54,11 +55,11 @@ public abstract class Adt<T>  {
 		array[++tail] = element;}
 	
 	/**
-	 * Return and remove the peek of the Structure. However,if the
+	 * Retrieves and remove the peek of the Structure. However,if the
 	 * Structure is empty, an UnderflowException will be issued.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Structure, or UnderflowException 
+	 * 		Retrieves the peek of the Structure, or UnderflowException 
 	 * if the Structure is empty.
 	 * 
 	 * @throws UnderflowException 
@@ -67,11 +68,11 @@ public abstract class Adt<T>  {
 	public abstract T rmv() throws UnderflowException;
 	
 	/**
-	 * Return, without remove, the peek of the Structure. If the Structure 
+	 * Retrieves, without remove, the peek of the Structure. If the Structure 
 	 * is empty, then will be issued an UnderflowException.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Structure, or UnderflowException if the 
+	 * 		Retrieves the peek of the Structure, or UnderflowException if the 
 	 * Structure is empty.
 	 * 
 	 * @throws UnderflowException 
@@ -83,7 +84,7 @@ public abstract class Adt<T>  {
 	 * Test if the Structure is empty or not.
 	 *  
 	 * @return boolean
-	 * 		Return true if the Structure is empty, or false otherwise.
+	 * 		Retrieves true if the Structure is empty, or false otherwise.
 	 *  
 	 *  */	
 	public boolean isEmpty(){
@@ -93,7 +94,7 @@ public abstract class Adt<T>  {
 	 * Test if the Structure is full or not.
 	 *  
 	 * @return boolean
-	 * 		Return true if the Structure is full, or false otherwise.
+	 * 		Retrieves true if the Structure is full, or false otherwise.
 	 *  
 	 *  */	
 	public boolean isFull(){
@@ -111,4 +112,8 @@ public abstract class Adt<T>  {
 			--tail;
 		}
 	}
+	
+	public abstract String toString();
+	
+	
 }

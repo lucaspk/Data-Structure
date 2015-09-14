@@ -1,5 +1,7 @@
 package queue;
 
+import java.util.Arrays;
+
 import adt.Adt;
 import exceptions.*;
 
@@ -42,11 +44,11 @@ public class Queue<T> extends Adt<T>{
 	}
 	
 	/**
-	 * Return and remove the peek of the Queue. However, if the Queue is empty,
+	 * Retrieves and remove the peek of the Queue. However, if the Queue is empty,
 	 * an UnderflowException will be issued.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Queue, or UnderflowException if the Queue 
+	 * 		Retrieves the peek of the Queue, or UnderflowException if the Queue 
 	 * is empty.
 	 * 
 	 * @throws UnderflowException 
@@ -62,11 +64,11 @@ public class Queue<T> extends Adt<T>{
 		}
 	
 	/**
-	 * Return, without remove, the peek of the Queue. If the Queue is empty, 
+	 * Retrieves, without remove, the peek of the Queue. If the Queue is empty, 
 	 * then will be issued an UnderflowException.
 	 *  
 	 * @return peek
-	 * 		Return the peek of the Queue, or UnderflowException if the Queue
+	 * 		Retrieves the peek of the Queue, or UnderflowException if the Queue
 	 * is empty.
 	 * 
 	 * @throws UnderflowException 
@@ -77,4 +79,14 @@ public class Queue<T> extends Adt<T>{
 			throw new UnderflowException();
 		return array[0];}
 	
+	/**
+	 * Show the string representation of the Queue.
+	 * 
+	 * @return 
+	 * 		String representation of the Queue.
+	 *  */
+	@Override
+	public String toString() {
+		return "Queue "+Arrays.toString(array);
+	}
 }
