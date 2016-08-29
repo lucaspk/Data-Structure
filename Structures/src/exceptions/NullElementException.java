@@ -3,7 +3,7 @@ package exceptions;
 public class NullElementException extends Exception {
 
 	public NullElementException() {
-		super("The element must not be null.");
+		super("The element must be different of null.");
 	}
 	
 	public NullElementException(String message) {
